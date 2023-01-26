@@ -2,7 +2,7 @@
 @import url('fonts.css');
 
 :root {
-	--colorBlackText: black; /* Anna hat bestimmt das RICHTIGE Schwarz für uns ;-> */
+	--colorBlackText: black; /* Anna hat bestimmt das RICHTIGE Schwarz fÃ¼r uns ;-> */
 	--colorWhiteText: white; /* .. vlt auch noch ein ..*/
 }
 
@@ -66,3 +66,113 @@
 		color: white; 
 		align-self:center; 
 	}
+
+
+/*           Geralds Chaos    */
+
+#footer{
+    /* Adding backgroun with parallax effect */
+    padding-top: 5vw;
+
+background: no-repeat fixed center / cover url("../design-assets/bgk-footer.png");
+min-height: 200px;
+display: flex;
+color: white;
+justify-content:space-around;
+flex-direction: column;
+}
+
+#footer>article{
+
+    padding-bottom: 5vw;
+
+}
+
+#footer h2{
+    padding-bottom: 1em;
+}
+#footer>article:first-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+}
+
+/* grid-items 1 and 2 */
+
+#footer>article:first-child>*:nth-child(-n+2){
+    grid-row: 1 / 3 span;
+}
+
+#footer>article:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer fieldset{
+    display: flex;
+    border: none;
+}
+
+#footer fieldset>*:nth-child(2){
+    margin-left: 2em;
+}
+#footer input{
+    background: none;
+    border: solid white 0.5px;
+    height: 3em;
+    margin: 0;
+    padding: 0;
+
+}
+
+#footer button{
+    position: relative;
+    border-radius: 0;
+    background-color: 
+    rgba(255,255,255,0.5);
+    border: none;
+    height: 3em;
+    width: 4em;
+}
+
+#footer ul{
+    display: flex;
+    list-style: none;
+
+}
+
+
+#ourStudioF *:nth-child(-n+3)::before{
+    content: "";
+    width: 0.8em;
+    filter: invert(1);
+    content: '';
+    height: 0.8em;
+    display: inline-block;
+    margin-right: 0.5em;
+    }
+    
+#ourStudioF *:nth-child(2)::before{
+    background: no-repeat center / contain url('../design-assets/png/big104.png');
+}
+#ourStudioF *:nth-child(3)::before{
+    background: no-repeat center / contain url('../design-assets/png/phone351.png');
+    
+}
+
+.footersymbols li{
+    border: solid white 1px;
+    border-radius: 200%;
+    height: 39px;
+    width: 39px;
+    margin-left: 0.5em;
+}
+
+#footer ul li img{
+
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+   
+}
+

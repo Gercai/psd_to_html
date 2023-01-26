@@ -1,0 +1,7 @@
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
+
+/.vs/psd_to_html/v17/.wsuo
+/.vs/VSWorkspaceState.json
+/design-assets/.DS_Store

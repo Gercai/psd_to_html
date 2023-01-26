@@ -78,12 +78,33 @@
 	}
 
 
-/* X-Small devices (portrait phones) */ 
+
+/* X-Small devices (portrait phones) */
 @media (max-width: 576px) {
 }
 
 /* Small devices (landscape phones) */
 @media (max-width: 768px) {
+	#team div {
+		display: flex;
+		padding: 2rem;
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+
+	#team figure {
+		display: flex;
+	}
+
+		#team figure img {
+			height: 5rem;
+			width: 5rem;
+		}
+
+		#team figure figcaption {
+			width: 100%; 
+			height: 4.5rem;
+		}
 }
 
 /* Medium devices (tablets) */

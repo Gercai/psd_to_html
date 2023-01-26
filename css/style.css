@@ -1,6 +1,73 @@
 @import url('softreset.css');
 @import url('fonts.css');
 
+:root {
+	--colorBlackText: black; /* Anna hat bestimmt das RICHTIGE Schwarz für uns ;-> */
+	--colorWhiteText: white; /* .. vlt auch noch ein ..*/
+}
+
+#team {
+	align-content: center;
+	background-image: url('../images/bgk-header.png');
+	background-position: center; 
+	background-size: cover; 
+	display: flex; 
+	flex-direction: column; 
+	color: var(--colorWhiteText); 
+	text-align: center; 
+	padding: 3rem 1rem; 
+}
+
+	#team h1 {
+		/* TODO font-family */
+		text-transform: uppercase;
+	}
+
+	#team hr {
+		width: 4rem; 
+		align-self: center;
+		margin: 1rem; 
+	}
+
+	#team div {
+		display: flex;
+		justify-content: center; 
+		gap: 1rem; 
+		padding: 2rem; 
+	}
+
+	#team figure img {
+		background-color: var(--colorWhiteText); 
+		height: 16rem; 
+		width: 16rem; 
+	}
+
+	#team figcaption {
+		padding: 1rem; 
+		border: 1px solid var(--colorWhiteText); 
+	}
+
+	#team figcaption:first-line {
+		font-weight: 700; 
+	}
+	
+	#team p {
+		margin-top: 2rem; 
+		margin-bottom: 1rem; 
+	}
+
+	#team button {
+		margin: 1rem; 
+		width: max-content; 
+		padding: 1rem; 
+		text-transform: uppercase; 
+		border: 1px solid var(--colorWhiteText);  
+		background-color: transparent; 
+		color: white; 
+		align-self:center; 
+	}
+
+
 /*           Geralds Chaos    */
 
 #footer{
@@ -108,8 +175,4 @@ flex-direction: column;
     filter: invert(1);
    
 }
-
-
-/* Ende von Geralds Chaos */
-
 

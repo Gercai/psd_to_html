@@ -1,9 +1,10 @@
-@import url('softreset.css');
+@import url('softReset.css');
 @import url('fonts.css');
 
 :root {
 	--colorBlackText: black; /* Anna hat bestimmt das RICHTIGE Schwarz für uns ;-> */
 	--colorWhiteText: white; /* .. vlt auch noch ein ..*/
+	--colorWhiteText80: rgba(255,255,255,0.8); /* .. vlt auch noch .. */
 }
 
 #team {
@@ -13,7 +14,7 @@
 	background-size: cover; 
 	display: flex; 
 	flex-direction: column; 
-	color: var(--colorWhiteText); 
+	color: var(--colorWhiteText80); 
 	text-align: center; 
 	padding: 3rem 1rem; 
 }
@@ -21,6 +22,10 @@
 	#team h1 {
 		/* TODO font-family */
 		text-transform: uppercase;
+	}
+
+	#team h2 {
+		/* TODO font-family */
 	}
 
 	#team hr {
@@ -34,17 +39,22 @@
 		justify-content: center; 
 		gap: 1rem; 
 		padding: 2rem; 
+		flex-wrap: wrap; 
+	}
+
+	#team figure {
+		border: 1px solid var(--colorWhiteText80); 
 	}
 
 	#team figure img {
-		background-color: var(--colorWhiteText); 
+		background-color: var(--colorWhiteText);  
 		height: 16rem; 
 		width: 16rem; 
 	}
 
 	#team figcaption {
-		padding: 1rem; 
-		border: 1px solid var(--colorWhiteText); 
+		padding: 1rem;
+		text-transform: uppercase; 
 	}
 
 	#team figcaption:first-line {
@@ -61,11 +71,52 @@
 		width: max-content; 
 		padding: 1rem; 
 		text-transform: uppercase; 
-		border: 1px solid var(--colorWhiteText);  
+		border: 1px solid var(--colorWhiteText80);  
 		background-color: transparent; 
-		color: white; 
+		color: var(--colorWhiteText80);  
 		align-self:center; 
 	}
+
+
+/* X-Small devices (portrait phones) */
+@media (max-width: 576px) {
+}
+
+/* Small devices (landscape phones) */
+@media (max-width: 768px) {
+	#team div {
+		display: flex;
+		padding: 2rem;
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+
+	#team figure {
+		display: flex;
+	}
+
+		#team figure img {
+			height: 5rem;
+			width: 5rem;
+		}
+
+		#team figure figcaption {
+			width: 100%; 
+			height: 4.5rem;
+		}
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+}
+
+/* Large devices (desktops) */
+@media (max-width: 1200px) {
+}
+
+/* X-Large devices (large desktops) */
+@media (max-width: 1400px) {
+}
 
 /*           Geralds Chaos    */
 
@@ -178,3 +229,43 @@ flex-direction: column;
    
 }
 
+html, body {
+	height: 100%;
+}
+
+html, body, p, ol, ul, li, dl, dt, dd, blockquote,
+figure, fieldset, legend, textarea, pre,
+hr, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+button, input, select {
+	margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+h1 {
+	font-family: Sego;
+}
+
+
+#expertise {
+   
+    display: flex;
+    border: solid 2px red;
+    
+
+}
+
+#expertiseH1 {
+
+    color: red
+}

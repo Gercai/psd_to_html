@@ -78,7 +78,6 @@
 	}
 
 
-
 /* X-Small devices (portrait phones) */
 @media (max-width: 576px) {
 }
@@ -118,13 +117,20 @@
 /* X-Large devices (large desktops) */
 @media (max-width: 1400px) {
 }
+
 /*           Geralds Chaos    */
 
 #footer{
-    /* Adding backgroun with parallax effect */
     padding-top: 5vw;
 
-background: no-repeat fixed center / cover url("../design-assets/bgk-footer.png");
+	/*  background kann gekürzt werden, 
+	In der reihenfolge
+	background-repeat
+	background-position
+	background - size
+	;*/ 
+/*           repeat position / size*/	
+background: no-repeat center / cover url("../design-assets/bgk-footer.png");
 min-height: 200px;
 display: flex;
 color: white;
@@ -190,8 +196,6 @@ flex-direction: column;
     list-style: none;
 
 }
-
-
 #ourStudioF *:nth-child(-n+3)::before{
     content: "";
     width: 0.8em;
@@ -206,8 +210,7 @@ flex-direction: column;
     background: no-repeat center / contain url('../design-assets/png/big104.png');
 }
 #ourStudioF *:nth-child(3)::before{
-    background: no-repeat center / contain url('../design-assets/png/phone351.png');
-    
+    background: no-repeat center / contain url('../design-assets/png/phone351.png');    
 }
 
 .footersymbols li{

@@ -1,5 +1,207 @@
-@import url('softreset.css');
+@import url('softReset.css');
 @import url('fonts.css');
 
+:root {
+	--colorBlackText: black; /* Anna hat bestimmt das RICHTIGE Schwarz für uns ;-> */
+	--colorWhiteText: white; /* .. vlt auch noch ein ..*/
+	--colorWhiteText80: rgba(255,255,255,0.8); /* .. vlt auch noch .. */
+}
 
+#team {
+	align-content: center;
+	background-image: url('../images/bgk-header.png');
+	background-position: center; 
+	background-size: cover; 
+	display: flex; 
+	flex-direction: column; 
+	color: var(--colorWhiteText80); 
+	text-align: center; 
+	padding: 3rem 1rem; 
+}
+
+	#team h1 {
+		/* TODO font-family */
+		text-transform: uppercase;
+	}
+
+	#team h2 {
+		/* TODO font-family */
+	}
+
+	#team hr {
+		width: 4rem; 
+		align-self: center;
+		margin: 1rem; 
+	}
+
+	#team div {
+		display: flex;
+		justify-content: center; 
+		gap: 1rem; 
+		padding: 2rem; 
+		flex-wrap: wrap; 
+	}
+
+	#team figure {
+		border: 1px solid var(--colorWhiteText80); 
+	}
+
+	#team figure img {
+		background-color: var(--colorWhiteText);  
+		height: 16rem; 
+		width: 16rem; 
+	}
+
+	#team figcaption {
+		padding: 1rem;
+		text-transform: uppercase; 
+	}
+
+	#team figcaption:first-line {
+		font-weight: 700; 
+	}
+	
+	#team p {
+		margin-top: 2rem; 
+		margin-bottom: 1rem; 
+	}
+
+	#team button {
+		margin: 1rem; 
+		width: max-content; 
+		padding: 1rem; 
+		text-transform: uppercase; 
+		border: 1px solid var(--colorWhiteText80);  
+		background-color: transparent; 
+		color: var(--colorWhiteText80);  
+		align-self:center; 
+	}
+
+
+/* X-Small devices (portrait phones) */ 
+@media (max-width: 576px) {
+}
+
+/* Small devices (landscape phones) */
+@media (max-width: 768px) {
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 992px) {
+}
+
+/* Large devices (desktops) */
+@media (max-width: 1200px) {
+}
+
+/* X-Large devices (large desktops) */
+@media (max-width: 1400px) {
+}
+/*           Geralds Chaos    */
+
+#footer{
+    /* Adding backgroun with parallax effect */
+    padding-top: 5vw;
+
+background: no-repeat fixed center / cover url("../design-assets/bgk-footer.png");
+min-height: 200px;
+display: flex;
+color: white;
+justify-content:space-around;
+flex-direction: column;
+}
+
+#footer>article{
+
+    padding-bottom: 5vw;
+
+}
+
+#footer h2{
+    padding-bottom: 1em;
+}
+#footer>article:first-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+}
+
+/* grid-items 1 and 2 */
+
+#footer>article:first-child>*:nth-child(-n+2){
+    grid-row: 1 / 3 span;
+}
+
+#footer>article:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer fieldset{
+    display: flex;
+    border: none;
+}
+
+#footer fieldset>*:nth-child(2){
+    margin-left: 2em;
+}
+#footer input{
+    background: none;
+    border: solid white 0.5px;
+    height: 3em;
+    margin: 0;
+    padding: 0;
+
+}
+
+#footer button{
+    position: relative;
+    border-radius: 0;
+    background-color: 
+    rgba(255,255,255,0.5);
+    border: none;
+    height: 3em;
+    width: 4em;
+}
+
+#footer ul{
+    display: flex;
+    list-style: none;
+
+}
+
+
+#ourStudioF *:nth-child(-n+3)::before{
+    content: "";
+    width: 0.8em;
+    filter: invert(1);
+    content: '';
+    height: 0.8em;
+    display: inline-block;
+    margin-right: 0.5em;
+    }
+    
+#ourStudioF *:nth-child(2)::before{
+    background: no-repeat center / contain url('../design-assets/png/big104.png');
+}
+#ourStudioF *:nth-child(3)::before{
+    background: no-repeat center / contain url('../design-assets/png/phone351.png');
+    
+}
+
+.footersymbols li{
+    border: solid white 1px;
+    border-radius: 200%;
+    height: 39px;
+    width: 39px;
+    margin-left: 0.5em;
+}
+
+#footer ul li img{
+
+    width: 100%;
+    height: 100%;
+    filter: invert(1);
+   
+}
 

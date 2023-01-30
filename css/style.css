@@ -20,7 +20,7 @@
 }
 
 	#team h1 {
-		/* TODO font-family */
+		font-family: PlayFair;
 		text-transform: uppercase;
 	}
 

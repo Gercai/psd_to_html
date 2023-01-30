@@ -7,6 +7,67 @@
 	--colorWhiteText80: rgba(255,255,255,0.8); /* .. vlt auch noch .. */
 }
 
+
+header{
+	color: white;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header>h1::before{
+	content:"";
+	display: inline-block;
+	background: no-repeat center / contain url("../images/logo.png");
+	width: 2em;
+	height: 2em;
+	position: relative;
+	top: 0.7em;
+	filter: saturate(0);
+}
+
+header ul{
+	display: flex;
+	list-style: none;
+}
+
+header ul a {
+	color: var(--colorWhiteText);
+	text-decoration: none;
+	padding: 0 1vw 0 1vw;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+
+#hero{
+	color: var(--colorWhiteText);
+	/* Ein kleiner trick den ich genutzt habe, da Hero innerhalb der Main ist und Header außerhalb
+	Macht sich das mit dem einzelnen hintergrundbild sehr schwer..
+	Mit negativen Margin und Positiven Padding kann man den hintergrund in den header schieben. */
+	margin: -50px 0 0 0;
+	padding: 50px 20vw 5vw 20vw;
+	background: no-repeat center / cover url("../images/bgk-header.png");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+#hero>*:nth-child(n+1){
+	margin-top: 4vw;
+}
+
+#hero button{
+	background: none;
+	color: turquoise;
+	border: solid 1px turquoise;
+	text-transform: uppercase;
+	padding: 1em;
+}
+
 #team {
 	align-content: center;
 	background-image: url('../images/bgk-header.png');
@@ -216,6 +277,10 @@ flex-direction: column;
 }
 #ourStudioF *:nth-child(3)::before{
     background: no-repeat center / contain url('../design-assets/png/phone351.png');    
+}
+
+#tajam::before{
+	background: no-repeat center / contain url('../design-assets/png/tajam.png');    
 }
 
 .footersymbols li{

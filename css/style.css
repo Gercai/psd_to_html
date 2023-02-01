@@ -2,11 +2,38 @@
 @import url('fonts.css');
 
 :root {
-	--colorBlackText: black; /* Anna hat bestimmt das RICHTIGE Schwarz für uns ;-> */
-	--colorWhiteText: white; /* .. vlt auch noch ein ..*/
+	--colorBlackText: #413D4B; /* Anna hat bestimmt das RICHTIGE Schwarz für uns ;-> */
+	--colorBlackText80: #413D4B;
+	--colorBlackText70: #413D4B;
+	--colorWhiteText: rgb(255, 255, 255); /* .. vlt auch noch ein ..*/
 	--colorWhiteText80: rgba(255,255,255,0.8); /* .. vlt auch noch .. */
+	--colorturquoiseText: #00E0D0;
 }
 
+h1 {
+
+	font-family: PlayFair;
+	font-weight: 900;
+	color: var(--colorWhiteText);
+}
+
+h2 {
+
+	font-family: PlayFair;
+	font-weight: 700;
+}
+
+h3 {
+
+	font-family: PlayFair;
+	font-weight: 400;
+}
+
+h4 {
+	
+	font-family: Robo;
+    font-weight: 900;
+}
 
 header{
 	color: white;
@@ -81,12 +108,12 @@ header ul a {
 }
 
 	#team h1 {
-		/* TODO font-family */
+		font-family: PlayFair;
 		text-transform: uppercase;
 	}
 
 	#team h2 {
-		/* TODO font-family */
+		font-family: PlayFair;
 	}
 
 	#team hr {

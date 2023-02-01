@@ -1,41 +1,6 @@
 @import url('softReset.css');
 @import url('fonts.css');
 
-@font-face {
-    font-family: Hammerreg;
-    src: url("../fonts/HammersmithOne-Regular.ttf");
-}
-
-@font-face {
-    font-family: PlayFair;
-    font-weight: 900;
-    src: url("../fonts/PlayfairDisplay-Black.ttf");
-}
-
-@font-face {
-    font-family: PlayFair;
-    font-weight: 700 800;
-    src: url("../fonts/PlayfairDisplay-Bold.ttf");
-}
-
-@font-face {
-    font-family: PlayFair;
-    font-weight: 400;
-    src: url("../fonts/PlayfairDisplay-Regular.ttf");
-}
-
-@font-face {
-    font-family: Robo;
-    font-weight: 900;
-    src: url("../fonts/Roboto-Black.ttf");
-}
-
-@font-face {
-    font-family: Robo;
-    font-weight: 300;
-    src: url("../fonts/Roboto-Black.ttf");
-}
-
 :root {
 	--colorBlackText: #413D4B; 
 	--colorBlackText80: rgba(65,19,75,0.8);

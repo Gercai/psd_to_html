@@ -1,20 +1,56 @@
 @import url('softReset.css');
 @import url('fonts.css');
 
+@font-face {
+    font-family: Hammerreg;
+    src: url("../fonts/HammersmithOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: PlayFair;
+    font-weight: 900;
+    src: url("../fonts/PlayfairDisplay-Black.ttf");
+}
+
+@font-face {
+    font-family: PlayFair;
+    font-weight: 700 800;
+    src: url("../fonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: PlayFair;
+    font-weight: 400;
+    src: url("../fonts/PlayfairDisplay-Regular.ttf");
+}
+
+@font-face {
+    font-family: Robo;
+    font-weight: 900;
+    src: url("../fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: Robo;
+    font-weight: 300;
+    src: url("../fonts/Roboto-Black.ttf");
+}
+
 :root {
-	--colorBlackText: #413D4B; /* Anna hat bestimmt das RICHTIGE Schwarz für uns ;-> */
+	--colorBlackText: #413D4B; 
 	--colorBlackText80: #413D4B;
 	--colorBlackText70: #413D4B;
-	--colorWhiteText: rgb(255, 255, 255); /* .. vlt auch noch ein ..*/
-	--colorWhiteText80: rgba(255,255,255,0.8); /* .. vlt auch noch .. */
+	--colorWhiteText: rgb(255, 255, 255); 
+	--colorWhiteText80: rgba(255,255,255,0.8);
 	--colorturquoiseText: #00E0D0;
 }
 
 h1 {
-
+	
 	font-family: PlayFair;
 	font-weight: 900;
 	color: var(--colorWhiteText);
+	
 }
 
 h2 {
@@ -33,6 +69,7 @@ h4 {
 	
 	font-family: Robo;
     font-weight: 900;
+	font-size: 1em;
 }
 
 header{
@@ -94,6 +131,119 @@ header ul a {
 	text-transform: uppercase;
 	padding: 1em;
 }
+
+/* Annas Expertise */
+
+#expertiseH2 {
+
+	text-align: center;
+	text-transform: uppercase;
+	--colorBlackText: #413D4B;
+}
+
+#expertiseH3 {
+
+	text-align: center;
+}
+
+
+
+
+#expertise {
+
+	
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+
+#hr1 {
+
+	display: flex;
+	width: 50px;
+	border: 1px solid  #413D4B;
+	justify-content: center;
+	
+	
+}
+
+#expertiseContainer {
+
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: 318px 318px 318px;
+	grid-template-rows: 250px 250px 250px;
+	padding-left: 15rem;
+	padding-right: 15rem;
+	justify-content: center;
+	
+	
+}
+
+#box1 {
+	
+	
+	border-right: #413D4B solid 1px;
+	border-bottom: #413D4B solid 1px;
+	text-align: center;
+	
+}
+
+#box2 {
+
+	border-right: #413D4B solid 1px;
+	border-bottom: #413D4B solid 1px;
+	text-align: center;
+	
+	
+
+}
+#box3 {
+
+	
+	border-bottom: #413D4B solid 1px;
+	text-align: center;
+	
+
+}
+#box4 {
+
+	border-right: #413D4B solid 1px;
+	text-align: center;
+	
+
+}
+#box5 {
+
+	border-right: #413D4B solid 1px;
+	text-align: center;
+	
+
+}
+
+#box6 {
+	
+	text-align: center;
+
+	
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #team {
 	align-content: center;

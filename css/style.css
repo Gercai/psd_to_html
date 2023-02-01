@@ -53,7 +53,6 @@ h1 {
 	font-family: PlayFair;
 	font-weight: 900;
 	color: var(--colorWhiteText);
-	
 }
 
 h2 {
@@ -120,7 +119,6 @@ header ul a {
 	align-items: center;
 }
 
-
 #hero>*:nth-child(n+1){
 	margin-top: 4vw;
 }
@@ -134,7 +132,6 @@ header ul a {
 }
 
 /* Annas Expertise */
-
 #expertiseH2 {
 
 	text-align: center;
@@ -150,14 +147,7 @@ header ul a {
 
 
 
-#expertise {
 
-	
-	display: flex;
-	flex-direction: column;
-	
-	
-}
 
 #hr1 {
 
@@ -168,6 +158,17 @@ header ul a {
 	
 	
 }
+
+
+#expertise {
+   
+    display: flex;
+	text-align: center;
+	flex-direction: column;
+}
+
+
+
 
 #expertiseContainer {
 
@@ -182,12 +183,20 @@ header ul a {
 	
 }
 
+
 #box1 {
 	
 	
 	border-right: #413D4B solid 1px;
 	border-bottom: #413D4B solid 1px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2em;
+
+
+
 	
 }
 
@@ -196,6 +205,10 @@ header ul a {
 	border-right: #413D4B solid 1px;
 	border-bottom: #413D4B solid 1px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2em;
 	
 	
 
@@ -205,13 +218,20 @@ header ul a {
 	
 	border-bottom: #413D4B solid 1px;
 	text-align: center;
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2em;
 
 }
 #box4 {
 
 	border-right: #413D4B solid 1px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2em;
 	
 
 }
@@ -219,12 +239,19 @@ header ul a {
 
 	border-right: #413D4B solid 1px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2em;
 	
-
 }
 
 #box6 {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 2em;
 }
 
 
@@ -240,10 +267,10 @@ header ul a {
 	padding: 3rem 1rem;
 }
 
-	#team hr {
+	hr {
 		width: 4rem; 
 		align-self: center;
-		margin: 1rem; 
+		margin: 1rem;  
 	}
 
 	#team div {
@@ -443,7 +470,6 @@ flex-direction: column;
 
 }
 
-
 #footer button{
     position: relative;
     border-radius: 0;
@@ -516,18 +542,6 @@ html {
 
 h1 {
 	font-family: Sego;
-}
-
-#expertise {
-   
-    display: flex;
-    border: solid 2px red;
-
-}
-
-#expertiseH1 {
-
-    color: red
 }
 
 /* X-Small devices (portrait phones) */

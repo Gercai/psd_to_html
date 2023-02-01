@@ -88,12 +88,56 @@ header ul a {
 	margin-top: 4vw;
 }
 
-#hero button{
+#ourStory{
+	padding: 3vw 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+#ourStory>*:nth-child(2){
+width: 40vw;
+}
+
+#ourStory>*:first-child{
+	position: relative;
+	width: 20vw;
+}
+
+#ourStory figure img{
+	height: 10rem;
+	width: 10rem;
+	position: absolute;
+	top:-5rem;
+	right: 0;
+}
+
+#hero button,#ourStory button{
 	background: none;
 	color: turquoise;
 	border: solid 1px turquoise;
 	text-transform: uppercase;
 	padding: 1em;
+}
+
+#ourStoryDescr{
+	display: flex;
+	align-items:flex-start;
+	justify-content: space-between;
+	flex-direction: column;
+	margin-left: 5vw;
+}
+
+#ourStoryVideo{
+height: 100px;
+background-color: black;
+}
+
+#ourStoryDescr>*{
+	margin-top: 2vw;
 }
 
 /* Annas Expertise */
@@ -108,10 +152,6 @@ header ul a {
 
 	text-align: center;
 }
-
-
-
-
 
 
 #hr1 {
@@ -131,8 +171,6 @@ header ul a {
 	text-align: center;
 	flex-direction: column;
 }
-
-
 
 
 #expertiseContainer {

@@ -38,6 +38,10 @@
 
 :root {
 	--colorBlackText: #413D4B; 
+	--colorBlackText80: rgba(65,19,75,0.8);
+	--colorBlackText70: rgba(65,19,75,0.7);
+	--colorWhiteText: rgb(255, 255, 255);
+	--colorWhiteText80: rgba(255,255,255,0.8); 
 	--colorBlackText80: #413D4B;
 	--colorBlackText70: #413D4B;
 	--colorWhiteText: rgb(255, 255, 255); 
@@ -46,7 +50,6 @@
 }
 
 h1 {
-	
 	font-family: PlayFair;
 	font-weight: 900;
 	color: var(--colorWhiteText);
@@ -54,21 +57,19 @@ h1 {
 }
 
 h2 {
-
 	font-family: PlayFair;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
 h3 {
-
 	font-family: PlayFair;
 	font-weight: 400;
 }
 
 h4 {
-	
 	font-family: Robo;
-    font-weight: 900;
+  font-weight: 900;
 	font-size: 1em;
 }
 
@@ -223,48 +224,21 @@ header ul a {
 }
 
 #box6 {
-	
 	text-align: center;
-
-	
-	
-
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #team {
-	align-content: center;
 	background-image: url('../images/bgk-header.png');
 	background-position: center; 
 	background-size: cover; 
-	display: flex; 
 	flex-direction: column; 
+	align-content: center;
+	display: flex; 
 	color: var(--colorWhiteText80); 
 	text-align: center; 
 	padding: 3rem 1rem;
 }
-
-	#team h1 {
-		font-family: PlayFair;
-		text-transform: uppercase;
-	}
-
-	#team h2 {
-		font-family: PlayFair;
-	}
 
 	#team hr {
 		width: 4rem; 
@@ -275,9 +249,9 @@ header ul a {
 	#team div {
 		display: flex;
 		justify-content: center; 
+		flex-wrap: wrap; 
 		gap: 1rem; 
 		padding: 2rem; 
-		flex-wrap: wrap; 
 	}
 
 	#team figure {
@@ -285,9 +259,9 @@ header ul a {
 	}
 
 	#team figure img {
-		background-color: var(--colorWhiteText);  
 		height: 16rem; 
 		width: 16rem; 
+		background-color: var(--colorWhiteText);  
 	}
 
 	#team figcaption {
@@ -305,16 +279,61 @@ header ul a {
 	}
 
 	#team button {
-		margin: 1rem; 
 		width: max-content; 
-		padding: 1rem; 
-		text-transform: uppercase; 
-		border: 1px solid var(--colorWhiteText80);  
 		background-color: transparent; 
-		color: var(--colorWhiteText80);  
 		align-self:center; 
+		border: 1px solid var(--colorWhiteText80);  
+		color: var(--colorWhiteText80);  
+		padding: 1rem; 
+		margin: 1rem; 
+		text-transform: uppercase; 
 	}
 
+#contact {
+	display: flex; 
+	justify-content: center; 
+	gap: 4rem; 
+	padding: 3rem 0rem;
+}
+
+	#contact form {
+		max-width: 80rem; 
+		display:flex; 
+		flex-direction: column;
+	}
+
+	#contact form input {
+		margin: 0.3rem 0rem;
+		padding: 0.3rem; 
+	}
+
+	#contact form textarea {
+		flex: 1; 
+	}
+
+	#contact article {
+		max-width: 80rem; 
+	}
+
+	#contact article .twoColumns {
+		display: flex; 
+		gap: 3rem; 
+	}
+
+	#contact article ul {
+		display: flex; 
+		flex-direction: column; 
+		}
+
+	#contact article ul li {
+		list-style-type: none; 
+		line-height: 5rem; 
+		text-align: center; 
+	}
+
+		#contact article object {
+			vertical-align: middle; 
+		}
 
 /* X-Small devices (portrait phones) */
 @media (max-width: 576px), (orientation: portrait) {
@@ -510,8 +529,6 @@ h1 {
 
     color: red
 }
-
-
 
 /* X-Small devices (portrait phones) */
 @media (max-width: 576px), (orientation: portrait) {

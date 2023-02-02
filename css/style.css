@@ -52,7 +52,10 @@ button{
 	border: solid 1px var(--colorturquoiseText);
 	text-transform: uppercase;
 	padding: 1em;
-	width:fit-content; 
+}
+
+*::placeholder {
+	font-family: Robo; 
 }
 
 header{
@@ -352,17 +355,16 @@ hr {
 	background-size: cover;
 	display: flex;
 	justify-content: center;
-	color: var(--colorWhiteText);
 }
 
 	#team > div {
 		flex-direction: column;
+		color: var(--colorWhiteText);
 	}
 
 	#team .stuff {
 		display: flex;
 		justify-content: space-between; 
-		flex-wrap: wrap; 
 		gap: 1rem; 
 		padding: 2rem 0rem; 
 	}
@@ -374,7 +376,6 @@ hr {
 
 	#team figure img {
 		width: 100%; 
-		height: 16rem; 
 		background-color: var(--colorWhiteText);  
 	}
 
@@ -391,11 +392,14 @@ hr {
 		font-size: 0.875rem; 
 	}
 
-	/* TODO: Button zentrieren */ 
-	
 	#team p {
 		margin-top: 2rem; 
 		margin-bottom: 1rem; 
+	}
+
+	#team button {
+		width: fit-content;
+		align-self: center; 
 	}
 
 #contact {
@@ -403,27 +407,35 @@ hr {
 	justify-content: center;
 }
 
+	#contact h2 {
+		text-align: left; 
+	}
+
 	#contact form {
 		flex:1; 
 		display:flex; 
 		flex-direction: column;
 	}
 
-	#contact h2 {
-		text-align: left; 
-	}
-
-	#contact form input {
+	#contact form input, textarea {
 		margin: 0.3rem 0rem;
 		padding: 0.3rem; 
 	}
 
 	#contact form textarea {
-		flex: 1; 
+		flex: 1;
+	}
+
+	#contact form button {
+		width: fit-content;
 	}
 
 #contact article {
 	flex: 1; 
+}
+
+#contact > .mainMargin {
+	gap: 2rem; 
 }
 
 	#contact article .twoColumns {
@@ -455,7 +467,6 @@ hr {
 	#team div {
 		display: flex;
 		padding: 2rem;
-		flex-wrap: nowrap;
 		flex-direction: column;
 	}
 
@@ -465,12 +476,11 @@ hr {
 
 		#team figure img {
 			height: 5rem;
-			width: 5rem;
+			width: auto; 
 		}
 
 		#team figure figcaption {
 			width: 100%; 
-			height: 4.5rem;
 		}
 }
 

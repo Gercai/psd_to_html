@@ -15,7 +15,7 @@
     src: url("../fonts/PlayfairDisplay-Bold.ttf");
 }
 
-@font-face {
+@font-face { 
     font-family: PlayFair;
     font-weight: 400;
     src: url("../fonts/PlayfairDisplay-Regular.ttf");
@@ -30,5 +30,11 @@
 @font-face {
     font-family: Robo;
     font-weight: 300;
-    src: url("../fonts/Roboto-Black.ttf");
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: Sailec;
+    font-weight: 100;
+    src: url("../fonts/SailecThin.ttf");
 }

@@ -189,11 +189,6 @@ background-color: black;
 	display: flex; 
 	justify-content: center;
 }
-
-#expertiseContainer{
-	
- }
-
    
 #expertise > div {
     padding-top: 5rem; 
@@ -210,7 +205,6 @@ background-color: black;
 	grid-template-rows: 250px 250px;
 	justify-content: center;
 	grid-gap: 0.5px;
-	margin: 0 10vw;
 	background-color: black; 	
 }
 
@@ -466,6 +460,8 @@ flex-direction: column;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 1em;
 }
+
+
 
 #footer button{
 	background-color: rgba(255,255,255,0.6);

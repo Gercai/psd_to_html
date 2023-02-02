@@ -194,12 +194,11 @@ background-color: black;
 	
  }
 
-#expertise {
    
+#expertise > div {
     padding-top: 5rem; 
     display: flex;
 	flex-direction: column;
-	
 	
 }
 
@@ -212,12 +211,8 @@ background-color: black;
 	justify-content: center;
 	grid-gap: 0.5px;
 	margin: 0 10vw;
-	background-color: black; 
-	
+	background-color: black; 	
 }
-
-
-
 
 #expertiseContainer>*{
 	background-color: white;

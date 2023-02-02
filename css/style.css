@@ -1,40 +1,57 @@
 @import url('softReset.css');
 @import url('fonts.css');
 
-:root {
+:root {  
 	--colorBlackText: #413D4B; 
 	--colorBlackText80: rgba(65,19,75,0.8);
 	--colorBlackText70: rgba(65,19,75,0.7);
 	--colorWhiteText: rgb(255, 255, 255);
 	--colorWhiteText80: rgba(255,255,255,0.8); 
-	--colorBlackText80: #413D4B;
-	--colorBlackText70: #413D4B;
-	--colorWhiteText: rgb(255, 255, 255); 
-	--colorWhiteText80: rgba(255,255,255,0.8);
+	--colorWhiteText70: rgba(255,255,255,0.7);
 	--colorturquoiseText: #00E0D0;
 }
 
 h1 {
 	font-family: PlayFair;
 	font-weight: 900;
+	font-size: 2rem; 
 	color: var(--colorWhiteText);
 }
 
 h2 {
 	font-family: PlayFair;
 	font-weight: 700;
+	font-size: 1.375rem; 
 	text-transform: uppercase;
 }
 
 h3 {
 	font-family: PlayFair;
 	font-weight: 400;
+	font-size: 0.875rem;  
 }
 
 h4 {
 	font-family: Robo;
   font-weight: 900;
-	font-size: 1em;
+	font-size: 0.875rem;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: Robo;
+  font-weight: 200;
+	font-size: 0.875rem;
+	line-height: 1.2rem;
+}
+
+button{
+	background: none;
+	color: var(--colorturquoiseText);
+	border: solid 1px var(--colorturquoiseText);
+	text-transform: uppercase;
+	padding: 1em;
+	width:fit-content; 
 }
 
 header{
@@ -45,16 +62,21 @@ header{
 	justify-content: space-between;
 }
 
-header>h1::before{
+.logoText{
+	color: var(--colorturquoiseText);
+	font-family: Sailec;
+	font-size: 1.5rem;
+}
+
+/*
+.logoText::before{
 	content:"";
 	display: inline-block;
 	background: no-repeat center / contain url("../images/logo.png");
 	width: 2em;
 	height: 2em;
 	position: relative;
-	top: 0.7em;
-	filter: saturate(0);
-}
+} */
 
 header ul{
 	display: flex;
@@ -62,6 +84,9 @@ header ul{
 }
 
 header ul a {
+	font-family: Robo; 
+	font-weight: 900;
+	font-size: 0.875rem; 
 	color: var(--colorWhiteText);
 	text-decoration: none;
 	padding: 0 1vw 0 1vw;
@@ -69,6 +94,11 @@ header ul a {
 	text-transform: uppercase;
 
 }
+
+header ul a:hover {
+	color: var(--colorturquoiseText);
+}
+
 
 #hero{
 	color: var(--colorWhiteText);
@@ -98,13 +128,14 @@ header ul a {
 	flex-wrap: wrap;
 }
 
-#ourStory>*:nth-child(2){
-width: 40vw;
-}
 
 #ourStory>*:first-child{
 	position: relative;
-	width: 20vw;
+	width: 25vw;
+}
+
+#ourStory>*:nth-child(2){
+width: 40vw;
 }
 
 #ourStory figure img{
@@ -113,14 +144,6 @@ width: 40vw;
 	position: absolute;
 	top:-5rem;
 	right: 0;
-}
-
-#hero button,#ourStory button{
-	background: none;
-	color: turquoise;
-	border: solid 1px turquoise;
-	text-transform: uppercase;
-	padding: 1em;
 }
 
 #ourStoryDescr{
@@ -140,44 +163,31 @@ background-color: black;
 	margin-top: 2vw;
 }
 
-#video {
 
+#video {
+	display: flex;
+	justify-content: center;
 	background: no-repeat center / cover url("../design-assets/bgk-middle.png");
-	background-position: center; 
-	background-size: cover; 
-	flex-direction: column; 
+}
+
+
+#video >div {
+	height: 40rem; 
+	flex-direction: column;
+	justify-content: space-around; 
 	align-content: center;
 	display: flex; 
 	color: var(--colorWhiteText80); 
 	text-align: center; 
 	}
 
-#playButton {
-
-	
-}
-/* Annas Expertise */
-#expertiseH2 {
-
-	text-align: center;
-	text-transform: uppercase;
-	--colorBlackText: #413D4B;
+#video img {
+	margin: 2rem; 
 }
 
-#expertiseH3 {
-
-	text-align: center;
-}
-
-
-#hr1 {
-
-	display: flex;
-	width: 50px;
-	border: 1px solid  #413D4B;
+#expertise {
+	display: flex; 
 	justify-content: center;
-	
-	
 }
 
 #expertiseContainer{
@@ -186,14 +196,16 @@ background-color: black;
 
 #expertise {
    
+    padding-top: 5rem; 
     display: flex;
-	text-align: center;
 	flex-direction: column;
+	
+	
 }
 
 #expertiseContainer {
-
 	margin-top: 2rem;
+	margin-bottom: 5rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 250px 250px;
@@ -279,7 +291,7 @@ hr {
 }
 
 .mainMargin {
-	width: 1200px;
+	width: 940px;
 	align-content: center;
 	display: flex;
 	text-align: center;
@@ -292,7 +304,7 @@ hr {
 	background-size: cover;
 	display: flex;
 	justify-content: center;
-	color: var(--colorWhiteText80);
+	color: var(--colorWhiteText);
 }
 
 	#team > div {
@@ -309,38 +321,33 @@ hr {
 
 	#team figure {
 		flex: 1; 
-		border: 1px solid var(--colorWhiteText80); 
+		border: 1px solid var(--colorWhiteText70); 
 	}
 
 	#team figure img {
 		width: 100%; 
-		height: 20rem; 
+		height: 16rem; 
 		background-color: var(--colorWhiteText);  
 	}
 
 	#team figcaption {
+		font-family: Robo;
+		font-weight: 300;
+		font-size: 0.8125rem; 
 		padding: 1rem;
 		text-transform: uppercase; 
 	}
 
 	#team figcaption:first-line {
-		font-weight: 700; 
+		font-weight: 900;
+		font-size: 0.875rem; 
 	}
+
+	/* TODO: Button zentrieren */ 
 	
 	#team p {
 		margin-top: 2rem; 
 		margin-bottom: 1rem; 
-	}
-
-	#team button {
-		width: max-content; 
-		background-color: transparent; 
-		align-self:center; 
-		border: 1px solid var(--colorWhiteText80);  
-		color: var(--colorWhiteText80);  
-		padding: 1rem; 
-		margin: 1rem; 
-		text-transform: uppercase; 
 	}
 
 #contact {
@@ -395,9 +402,7 @@ hr {
 @media (max-width: 576px), (orientation: portrait) {
 }
 
-/* Small devices (landscape phones) 
-Kommentar Gerald: Ich habe Orientation: Landscape wieder weggenommen, weil es einiges kaputt gemacht hatte.
-Eventuell muss es hier Landscape & maxwidth sein statt oder. Aber können wir auch ganz weglassen.*/
+/* Small devices (landscape phones) */
 @media (max-width: 768px){
 	#team div {
 		display: flex;
@@ -444,14 +449,7 @@ Eventuell muss es hier Landscape & maxwidth sein statt oder. Aber können wir au
 /*           Geralds Chaos    */
 
 #footer{
-    padding-top: 10vw;
-	/*  background kann gekürzt werden, 
-	In der reihenfolge
-	background-repeat
-	background-position
-	background - size
-	;*/ 
-/*           repeat position / size*/	
+padding-top: 10vw;
 background: no-repeat center / cover url("../design-assets/bgk-footer.png");
 min-height: 200px;
 display: flex;
@@ -461,9 +459,7 @@ flex-direction: column;
 }
 
 #footer>article{
-
     padding-bottom: 5vw;
-
 }
 
 #footer h2{
@@ -476,12 +472,18 @@ flex-direction: column;
     row-gap: 1em;
 }
 
-
+#footer button{
+	background-color: rgba(255,255,255,0.6);
+	border: none;
+	height: 2.5rem;
+	width: 4rem;
+}
 
 /* grid-items 1 and 2 */
 
+/* Bitte leserbar machen*/
 
-#footer>article:first-child>*:nth-child(-n+2){
+.footertriplets>*:nth-child(-n+2){
     grid-row: 1 / 3 span;
 }
 
@@ -507,25 +509,15 @@ flex-direction: column;
 
 }
 
-#footer button{
-    position: relative;
-    border-radius: 0;
-    background-color: 
-    rgba(255,255,255,0.5);
-    border: none;
-    height: 3em;
-    width: 4em;
-}
-
 #footer ul{
     display: flex;
     list-style: none;
 
 }
+
 #ourStudioF *:nth-child(-n+3)::before{
     content: "";
     width: 0.8em;
-    content: '';
     height: 0.8em;
     display: inline-block;
     margin-right: 0.5em;
@@ -538,10 +530,6 @@ flex-direction: column;
     background: no-repeat center / contain url('../design-assets/png/phone351.png');    
 }
 
-#tajam::before{
-	background: no-repeat center / contain url('../design-assets/png/tajam.png');    
-}
-
 .footersymbols li{
     border-radius: 200%;
     height: 39px;
@@ -552,33 +540,6 @@ flex-direction: column;
 #footer ul li img{
     width: 100%;
     height: 100%;
-}
-
-html, body {
-	height: 100%;
-}
-
-html, body, p, ol, ul, li, dl, dt, dd, blockquote,
-figure, fieldset, legend, textarea, pre,
-hr, h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	padding: 0;
-}
-
-button, input, select {
-	margin: 0;
-}
-
-html {
-	box-sizing: border-box;
-}
-
-*, *::before, *::after {
-	box-sizing: inherit;
-}
-
-h1 {
-	font-family: Sego;
 }
 
 /* X-Small devices (portrait phones) */

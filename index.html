@@ -7,8 +7,15 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header class="mainMargin">
-			<span class="logoText">tajam</span>
+	<article class="headerHeroBG">
+		<header>
+			<div class="mainMargin headerMargin">
+
+			<div class="logo">
+				<object data="images/logo.svg" type="image/svg+xml"></object>
+				<span class="logoText">tajam</span>
+			</div>
+			
 			<nav id="nav">
 			<ul>
 				<li><a href="#home">Home</a></li>
@@ -20,13 +27,21 @@
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
+	</div>
 	</header>
+
 		<section id="hero">
+			<div class="mainMargin">
+	
 			<!-- H2 war ich mir nicht mehr sicher-->
 			<h2>We Are Awesome Creative Agency</h2> <!--glaub das war H1-->
+			<div class="emptyBorder"></div>
 			<p>This is Photoshop Version of Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel minus vitae possimus ad. Fugiat, dolor nutella ratione officia repellendus eligendi illo, ex sunt maiores, deserunt nisi! Reprehenderit, eum facilis?</p>
 			<button>Learn More</button>
+			</div>
 		</section>
+	</article>
+
 		<section id="ourStory">
 			<figure>
 				<img src="images/logo-big.png" alt="">
@@ -39,7 +54,6 @@
 					<button>Learn more</button>
 			</article>
 		</section>
-
 <!--Video-->		
 
 <section id="video">
@@ -173,24 +187,33 @@
 		</section>
 	
 <!--geprüfter Hauptsaboteur Gerald IHK--> 	
-	<footer id="footer" class="mainMargin">
-		<article class="footertriplets">
+	<footer id="footer" >
+		<article class="mainMargin  footerMargin footerContainer">
 			<div> 
 				<!-- Überlege ob Logo directer als pseudoklasse sein sollte-->
-				<span class="logoText">tajam</span>
+				<div class="logo">
+					<object data="images/logo.svg" type="image/svg+xml"></object>
+					<span class="logoText">tajam</span>
+				</div>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolores ab recusandae incidunt aliquam quia vitae. Numquam quae quos, recusandae fugiat deleniti quasi dolorem ducimus? Tempore totam unde saepe iusto?</p>
 	
 			</div>
 			<div id="ourStudioF">
-				<h4>Our Studio</h4>
+				<div class="tableGrid">
+			
+				<h4><span>Our Studio</span></h4>
+				
+					<object data="images/big104.svg" type="image/svg+xml"></object>
 				<p>Ruko cucruk, Jl. Radio luar dalem jos<br>
 				No.12 -13, Kalideres - Jakarta Barat <br>
 				11480 - Indonesia
-				</p>
+				</p>	
+				<object data="images/phone351.svg" type="image/svg+xml"></object>
 				<p>(+62) 21-2224 3333</p>
+				</div>
 			</div>
+			<div class="stayInTouch">
 			<h4>Stay in Touch</h4>
-			
 			<form action="">
 			<fieldset>
 				<input type="text" placeholder="Subscribe to our Newsletter">
@@ -208,8 +231,9 @@
 				<li><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
 				</ul>
 			</nav>
+		</div>
 		</article>
-		<article>
+		<article class="mainMargin footerNav">
 			<nav>
 				<ul>
 					<li>Help</li>

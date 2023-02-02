@@ -180,6 +180,9 @@ background-color: black;
 	
 }
 
+#expertiseContainer{
+	
+ }
 
 #expertise {
    
@@ -188,41 +191,40 @@ background-color: black;
 	flex-direction: column;
 }
 
-
 #expertiseContainer {
 
 	margin-top: 2rem;
 	display: grid;
-	grid-template-columns: 318px 318px 318px;
-	grid-template-rows: 250px 250px 250px;
-	padding-left: 15rem;
-	padding-right: 15rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 250px 250px;
 	justify-content: center;
+	grid-gap: 0.5px;
+	margin: 0 10vw;
+	background-color: black; 
 	
-	
+}
+
+
+
+
+#expertiseContainer>*{
+	background-color: white;
 }
 
 
 #box1 {
 	
 	
-	border-right: #413D4B solid 1px;
-	border-bottom: #413D4B solid 1px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	padding: 2em;
-
-
-
 	
 }
 
 #box2 {
 
-	border-right: #413D4B solid 1px;
-	border-bottom: #413D4B solid 1px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -235,7 +237,6 @@ background-color: black;
 #box3 {
 
 	
-	border-bottom: #413D4B solid 1px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -245,7 +246,6 @@ background-color: black;
 }
 #box4 {
 
-	border-right: #413D4B solid 1px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -256,7 +256,6 @@ background-color: black;
 }
 #box5 {
 
-	border-right: #413D4B solid 1px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -424,6 +423,14 @@ Eventuell muss es hier Landscape & maxwidth sein statt oder. Aber können wir au
 
 /* Medium devices (tablets) */
 @media (max-width: 992px) {
+
+	#expertiseContainer {
+
+		grid-template-columns: 1fr 1fr;
+		
+	}
+	
+	
 }
 
 /* Large devices (desktops) */

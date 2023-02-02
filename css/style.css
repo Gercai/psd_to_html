@@ -96,6 +96,29 @@ header ul a {
 	padding: 1em;
 }
 
+/* Video */
+
+#video {
+
+	background: no-repeat center / cover url("../design-assets/bgk-middle.png");
+	background-position: center; 
+	background-size: cover; 
+	flex-direction: column; 
+	align-content: center;
+	display: flex; 
+	color: var(--colorWhiteText80); 
+	text-align: center; 
+	}
+
+#playButton {
+
+	
+}
+
+
+
+
+
 /* Annas Expertise */
 #expertiseH2 {
 

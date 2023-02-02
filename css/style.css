@@ -53,6 +53,10 @@ button{
 	padding: 1em;
 }
 
+*::placeholder {
+	font-family: Robo; 
+}
+
 header{
 	color: white;
 	height: 50px;
@@ -344,31 +348,35 @@ hr {
 	justify-content: center;
 }
 
+	#contact h2 {
+		text-align: left; 
+	}
+
 	#contact form {
 		flex:1; 
 		display:flex; 
 		flex-direction: column;
 	}
 
-	#contact h2 {
-		text-align: left; 
-	}
-
-	#contact form input {
+	#contact form input, textarea {
 		margin: 0.3rem 0rem;
 		padding: 0.3rem; 
 	}
 
 	#contact form textarea {
-		flex: 1; 
+		flex: 1;
 	}
 
-#contact form button {
-	width: fit-content;
-}
+	#contact form button {
+		width: fit-content;
+	}
 
 #contact article {
 	flex: 1; 
+}
+
+#contact > .mainMargin {
+	gap: 2rem; 
 }
 
 	#contact article .twoColumns {

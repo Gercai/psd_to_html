@@ -1,7 +1,7 @@
 @import url('softReset.css');
 @import url('fonts.css');
 
-:root {
+:root {  
 	--colorBlackText: #413D4B; 
 	--colorBlackText80: rgba(65,19,75,0.8);
 	--colorBlackText70: rgba(65,19,75,0.7);

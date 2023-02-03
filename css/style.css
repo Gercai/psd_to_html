@@ -167,6 +167,7 @@ header ul a:hover {
 	justify-content: flex-start;
 	flex-direction: column;
 	text-align: left;
+	color: var(--colorBlackText);
 }
 
 #ourStoryVideo{
@@ -209,6 +210,7 @@ background-color: black;
     padding-top: 5rem; 
     display: flex;
 	flex-direction: column;
+	color: var(--colorBlackText);
 	
 }
 
@@ -219,13 +221,14 @@ background-color: black;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 250px 250px;
 	justify-content: center;
+	color: var(--colorBlackText);
 }
 
 /* Erklärung 
 Jedes Element außer die in der ersten Spalte bekommen eine border links*/
 
 #expertiseContainer>:nth-child(n){
-	border-left: solid black 1px;
+	border-left: solid rgb(0, 0, 0) 1px;
 }
 /* Hier habe ich die jeweils erste Spalte reihe ausgeschlossen.
 3n da es 3spalten sind +1 weil es mit der ersten anfängt*/
@@ -238,19 +241,19 @@ Jedes Element außer die in der ersten Spalte bekommen eine border links*/
 Ab der zweitel spalte bekommen alle Boxen eine Border nach oben.*/
 
 #expertiseContainer>:nth-child(n+4){
-	border-top: solid black 1px;
+	border-top: solid rgb(0, 0, 0) 1px;
 }
 
 @media (max-width: 992px) {
 
 	#expertiseContainer>:nth-child(n){
-		border-left: solid black 1px;
+		border-left: solid rgb(0, 0, 0) 1px;
 	}
 	#expertiseContainer>:nth-child(2n+1){
 		border-left: none;
 	}
 	#expertiseContainer>:nth-child(n+3){
-		border-top: solid black 1px;
+		border-top: solid rgb(0, 0, 0) 1px;
 	}
 }
 
@@ -403,6 +406,8 @@ hr {
 
 	#contact h2 {
 		text-align: left; 
+		color: var(--colorBlackText);
+		
 	}
 
 	#contact form {

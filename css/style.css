@@ -229,7 +229,7 @@ background-color: black;
 }
 
 /* Erklärung 
-Jedes Element außer die in der ersten Spalte bekommen ein border links*/
+Jedes Element außer die in der ersten Spalte bekommen eine border links*/
 
 #expertiseContainer>:nth-child(n){
 	border-left: solid black 1px;

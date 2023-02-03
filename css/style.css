@@ -9,6 +9,7 @@
 	--colorWhiteText80: rgba(255,255,255,0.8); 
 	--colorWhiteText70: rgba(255,255,255,0.7);
 	--colorturquoiseText: #00E0D0;
+	--colorBlack50border: rgba(0,0,0,0.5);
 }
 
 h1 {
@@ -44,6 +45,11 @@ p {
 	font-size: 0.875rem;
 	line-height: 1.2rem;
 	padding-bottom: 1.2rem;
+}
+
+a{
+	text-decoration: none;
+	color: var(--colorWhiteText);	
 }
 
 button{
@@ -88,12 +94,12 @@ justify-content: center;
 }
 
 #hero button{
-	margin-bottom: 8vw;
+	margin-bottom: 8%;
 }
 
 #hero p{
-	padding-left:  8vw;
-	padding-right: 8vw;
+	padding-left:  8%;
+	padding-right: 8%;
 }
 
 .emptyBorder{
@@ -107,10 +113,12 @@ justify-content: center;
 	background: no-repeat center / cover url("../images/bgk-header.png");	
 }
 
+
 header ul{
 	display: flex;
 	list-style: none;
 }
+
 
 header ul a {
 	font-family: Robo; 
@@ -118,7 +126,7 @@ header ul a {
 	font-size: 0.875rem; 
 	color: var(--colorWhiteText);
 	text-decoration: none;
-	padding: 0 1vw;
+	padding-left: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
 
@@ -143,6 +151,7 @@ header ul a:hover {
 	align-items: center;
 }
 
+
 #ourStory figure{
 	padding: 0.5rem 10vw 0 5vw;
 }
@@ -163,6 +172,18 @@ background-color: black;
 #ourStoryDescr>h2{
 	padding-bottom: 2rem;
 }
+
+@media (max-width: 768px) {
+	#ourStory>:first-child{
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	#ourStoryDescr{
+	align-items: center;
+	}
+}
+
 
 
 #video {
@@ -210,7 +231,7 @@ background-color: black;
 Jedes Element außer die in der ersten Spalte bekommen ein border links*/
 
 #expertiseContainer>:nth-child(n){
-	border-left: solid black 1px;
+	border-left: solid var(--colorBlack50border) 1px;
 }
 /* Hier habe ich die jeweils erste Spalte reihe ausgeschlossen.
 3n da es 3spalten sind +1 weil es mit der ersten anfängt*/
@@ -223,19 +244,19 @@ Jedes Element außer die in der ersten Spalte bekommen ein border links*/
 Ab der zweitel spalte bekommen alle Boxen eine Border nach oben.*/
 
 #expertiseContainer>:nth-child(n+4){
-	border-top: solid black 1px;
+	border-top: solid var(--colorBlack50border) 1px;
 }
 
 @media (max-width: 992px) {
 
 	#expertiseContainer>:nth-child(n){
-		border-left: solid black 1px;
+		border-left: solid  var(--colorBlack50border) 1px;
 	}
 	#expertiseContainer>:nth-child(2n+1){
 		border-left: none;
 	}
 	#expertiseContainer>:nth-child(n+3){
-		border-top: solid black 1px;
+		border-top: solid  var(--colorBlack50border) 1px;
 	}
 }
 
@@ -274,7 +295,7 @@ hr {
 
 .footerMargin{
 	padding-bottom: 1rem;
-}
+	}
 
 #team {
 	background-image: url('../images/bgk-header.png');
@@ -461,7 +482,7 @@ align-items: center;
 #footer>article:first-child{
  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 1em;
+    row-gap: 2rem;
 }
 
 
@@ -522,8 +543,9 @@ align-items: center;
 }
 
 .footerNav li{
-	padding-left: 2rem;
+	padding-right: 2rem;
 }
+
 
 /* X-Small devices (portrait phones) */
 @media (max-width: 576px), (orientation: portrait) {
@@ -535,6 +557,7 @@ align-items: center;
 		align-items: center;
 		flex-direction: column;
 	}
+
 }
 
 

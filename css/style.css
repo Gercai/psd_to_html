@@ -3,8 +3,8 @@
 
 :root {  
 	--colorBlackText: #413D4B; 
-	--colorBlackText80: rgba(65,61,75,0.8);
-	--colorBlackText70: rgba(65,61,75,0.7);
+	--colorBlackText80: rgba(65,19,75,0.8);
+	--colorBlackText70: rgba(65,19,75,0.7);
 	--colorWhiteText: rgb(255, 255, 255);
 	--colorWhiteText80: rgba(255,255,255,0.8); 
 	--colorWhiteText70: rgba(255,255,255,0.7);
@@ -33,7 +33,7 @@ h3 {
 
 h4 {
 	font-family: Robo;
-    font-weight: 900;
+  font-weight: 900;
 	font-size: 0.875rem;
 	text-transform: uppercase;
 }
@@ -78,23 +78,10 @@ header{
 	font-size: 1.5rem;
 }
 
-/*
-.logoText::before{
-	content:"";
-	display: inline-block;
-	background: no-repeat center / contain url("../images/logo.png");
-	width: 2em;
-	height: 2em;
-	position: relative;
-} */
-
 #hero{
 display: flex;
 justify-content: center;
 }
-
-
-
 
 #hero h2, #hero p, .emptyBorder{
 	padding-bottom: 2rem;
@@ -141,7 +128,6 @@ header ul a:hover {
 	color: var(--colorturquoiseText);
 }
 
-
 #hero>*:first-child{
 	color: var(--colorWhiteText);
 	display: flex;
@@ -185,7 +171,6 @@ background-color: black;
 	background: no-repeat center / cover url("../design-assets/bgk-middle.png");
 }
 
-
 #video >div {
 	height: 40rem; 
 	flex-direction: column;
@@ -222,7 +207,7 @@ background-color: black;
 }
 
 /* Erklärung 
-Jedes Element außer die in der ersten Spalte bekommen eine border links*/
+Jedes Element außer die in der ersten Spalte bekommen ein border links*/
 
 #expertiseContainer>:nth-child(n){
 	border-left: solid black 1px;
@@ -258,59 +243,8 @@ Ab der zweitel spalte bekommen alle Boxen eine Border nach oben.*/
 das würde ganz automatisch passieren*/
 
 
-#box1 {
+.box {
 	
-	
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	padding: 2em;
-	
-}
-
-#box2 {
-
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	padding: 2em;
-	
-	
-
-}
-#box3 {
-
-	
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	padding: 2em;
-
-}
-#box4 {
-
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	padding: 2em;
-	
-
-}
-#box5 {
-
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	padding: 2em;
-	
-}
-
-#box6 {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -348,7 +282,8 @@ hr {
 	background-size: cover;
 	display: flex;
 	justify-content: center;
-	padding-top: 1rem; 
+		padding-top: 1rem; 
+
 }
 
 	#team > div {
@@ -549,11 +484,11 @@ align-items: center;
 #footer input{
     background: none;
     border: solid white 0.5px;
+	color: white;
 	width: 15rem;
     height: 3em;
     margin: 0;
-    padding: 0;
-
+    padding: 0 0 0 0.8rem;
 }
 
 .footersymbols li{

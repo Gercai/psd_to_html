@@ -43,7 +43,7 @@ p {
     font-weight: 200;
 	font-size: 0.875rem;
 	line-height: 1.2rem;
-
+	padding-bottom: 1.2rem;
 }
 
 button{
@@ -94,8 +94,19 @@ justify-content: center;
 }
 
 
+
+
 #hero h2, #hero p, .emptyBorder{
 	padding-bottom: 2rem;
+}
+
+#hero button{
+	margin-bottom: 8vw;
+}
+
+#hero p{
+	padding-left:  8vw;
+	padding-right: 8vw;
 }
 
 .emptyBorder{
@@ -141,39 +152,21 @@ header ul a:hover {
 
 
 #ourStory{
-	padding: 3vw 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: row;
-	position: relative;
-	flex-wrap: wrap;
 }
 
-
-#ourStory>*:first-child{
-	position: relative;
-	width: 25vw;
-}
-
-#ourStory>*:nth-child(2){
-width: 40vw;
-}
-
-#ourStory figure img{
-	height: 10rem;
-	width: 10rem;
-	position: absolute;
-	top:-5rem;
-	right: 0;
+#ourStory figure{
+	padding: 0.5rem 10vw 0 5vw;
 }
 
 #ourStoryDescr{
 	display: flex;
-	align-items:flex-start;
-	justify-content: space-between;
+	align-items: flex-start;
+	justify-content: flex-start;
 	flex-direction: column;
-	margin-left: 5vw;
+	text-align: left;
 }
 
 #ourStoryVideo{
@@ -181,8 +174,8 @@ height: 100px;
 background-color: black;
 }
 
-#ourStoryDescr>*{
-	margin-top: 2vw;
+#ourStoryDescr>h2{
+	padding-bottom: 2rem;
 }
 
 

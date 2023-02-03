@@ -82,6 +82,7 @@ header{
 	color: var(--colorturquoiseText);
 	font-family: Sailec;
 	font-size: 1.5rem;
+	padding-left: 0.3rem;
 }
 
 #hero{
@@ -492,9 +493,16 @@ align-items: center;
 	align-items: center;
 }
 
+
+#footer a{
+	font-family: Robo;
+	font-weight: 100;
+}
+
 .logo{
 	padding-bottom: 2rem;
 }
+
 
 #footer p{
 	padding-bottom: 1rem;
@@ -533,6 +541,11 @@ align-items: center;
     margin: 0;
     padding: 0 0 0 0.8rem;
 }
+
+#footer input::placeholder{
+	opacity: 1;
+}
+
 
 .footersymbols li{
 	padding-right: 0.5rem;

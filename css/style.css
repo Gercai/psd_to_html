@@ -60,7 +60,7 @@ button{
 	padding: 1em;
 }
 
-*::placeholder {
+*::placeholder, textarea {
 	font-family: Robo; 
 }
 
@@ -404,7 +404,6 @@ hr {
 
 	#contact article .logoList {
 		width: 100%;
-		background-color: red; 
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;

@@ -296,6 +296,7 @@ hr {
 	background-size: cover;
 	display: flex;
 	justify-content: center;
+	padding-top: 1rem; 
 }
 
 	#team > div {

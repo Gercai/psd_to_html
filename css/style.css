@@ -61,7 +61,8 @@ button{
 }
 
 *::placeholder, textarea {
-	font-family: Robo; 
+	font-family: Robo;
+	font-size: 0.875rem;
 }
 
 header{
@@ -359,6 +360,8 @@ hr {
 #contact {
 	display: flex;
 	justify-content: center;
+	padding-top: 2rem; 
+	padding-bottom: 2rem; 
 }
 
 #contact h2 {

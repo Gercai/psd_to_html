@@ -3,8 +3,8 @@
 
 :root {  
 	--colorBlackText: #413D4B; 
-	--colorBlackText80: rgba(65,19,75,0.8);
-	--colorBlackText70: rgba(65,19,75,0.7);
+	--colorBlackText80: rgba(65,61,75,0.8);
+	--colorBlackText70: rgba(65,61,75,0.7);
 	--colorWhiteText: rgb(255, 255, 255);
 	--colorWhiteText80: rgba(255,255,255,0.8); 
 	--colorWhiteText70: rgba(255,255,255,0.7);
@@ -33,7 +33,7 @@ h3 {
 
 h4 {
 	font-family: Robo;
-  font-weight: 900;
+    font-weight: 900;
 	font-size: 0.875rem;
 	text-transform: uppercase;
 }
